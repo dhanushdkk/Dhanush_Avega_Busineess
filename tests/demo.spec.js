@@ -32,5 +32,7 @@ test.only("cookies",async({browser})=>{
     console.log(await context.cookies())
     await page.goto("https://www.amazon.com/")
     await page.waitForTimeout(3000)
+    console.log(await context.cookies());
     console.log(await context.cookies());  
+
 })
